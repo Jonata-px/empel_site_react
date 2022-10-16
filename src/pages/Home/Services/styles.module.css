@@ -1,0 +1,80 @@
+.services_wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    gap:2rem 1.5rem;
+
+}
+
+
+.service_single{
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-color: rgba(0,0,0,0.7);
+    transition:ease-in .3s;
+    padding:20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.4);
+}
+
+.service_single:hover{
+    scale: 1.03;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 4px 4px 8px rgba(0,0,0,.7);
+}
+
+.service_single:hover h3{
+    top: 35px;
+}
+
+.service_single:hover article{
+    opacity: 1;
+    max-height: 1000px;
+}
+
+.service_single:hover p{
+    height: 100%;
+}
+
+.service_single h3{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size:1.7rem;
+    transition:.3s;
+}
+
+.service_single article{
+    opacity: 0;
+    transition:.6s;
+    margin-top:50px;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.service_single article > span, .service_single article ul span{
+    display:block;
+    font-weight:600;
+    font-size: 1.3rem;
+    margin-top:10px;
+    color: #fff;
+}
+
+.service_single p span{
+    font-weight: 600;
+}
+
+.service_single :is(p,li){
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+}
+

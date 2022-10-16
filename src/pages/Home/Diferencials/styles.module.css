@@ -1,0 +1,29 @@
+.diferencials{
+    padding-bottom:40px;
+    position: relative;
+    top: -30px;
+}
+
+.diferencials_wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    justify-content:center;
+    align-items:center;
+    gap:5rem;
+}
+
+.item_single{
+    text-align:center;
+    justify-content:flex-start;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.item_single svg{
+    font-size:7rem;
+    color: var(--secondary);
+}
+
+.item_single h3{
+    font-size:1.4rem;
+}
