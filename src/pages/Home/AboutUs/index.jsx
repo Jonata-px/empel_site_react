@@ -88,35 +88,37 @@ export default function AboutUs() {
     return (
         <>
             <section ref={aboutRef} className={styles.about_us} >
+                
                 <div className={"background_red"}></div>
-                    <div className={"container "+styles.container}>
-                        <h2>Quem somos</h2>
 
-                        <p>A EMPEL foi fundada em 1988 com o sr. Elves Vieira de Melo na cidade de Pires do Rio no interior do estado. Logo viu na região um futuro promissor para o mercado de prestação de serviços em eletricidade. Juntamente com muita disciplina e objetividade começou a construir a estrutura física e organizacional da empresa.</p>
-                        <p>Hoje com mais de 30 anos mercado atendemos todo o Brasil, com excelência em qualidade e satisfação. Desenvolvendo soluções para nossos clientes, para uma economia e melhor qualidade de energia elétrica.</p>
+                <div className={"container "+styles.container}>
+                    <h2>Quem somos</h2>
 
-                        <div className={styles.info_wrap}>
-                            <div className={styles.info_single}>
-                                <h1 className={styles.yearsRef}>0</h1>
-                                <h3>Anos de Experiência</h3>
-                            </div>
+                    <p>A EMPEL foi fundada em 1988 com o sr. Elves Vieira de Melo na cidade de Pires do Rio no interior do estado. Logo viu na região um futuro promissor para o mercado de prestação de serviços em eletricidade. Juntamente com muita disciplina e objetividade começou a construir a estrutura física e organizacional da empresa.</p>
+                    <p>Hoje com mais de 30 anos de mercado atendemos todo o Brasil, com excelência em qualidade e satisfação. Desenvolvendo soluções para nossos clientes, para uma economia e melhor qualidade de energia elétrica.</p>
 
-                            <div className={styles.info_single}>
-                                <h1 className={styles.servicesRef}>0</h1>
-                                <h3>Serviços Concretizados</h3>
-                            </div>
+                    <div className={styles.info_wrap}>
+                        <div className={styles.info_single}>
+                            <h1 className={styles.yearsRef}>0</h1>
+                            <h3>Anos de Experiência</h3>
+                        </div>
 
-                            <div className={styles.info_single}>
-                                <h1 className={styles.clientesRateRef}>0</h1>
-                                <h3>Satisfação de nossos clientes</h3>
-                            </div>
+                        <div className={styles.info_single}>
+                            <h1 className={styles.servicesRef}>0</h1>
+                            <h3>Serviços Concretizados</h3>
+                        </div>
 
-                            <div className={styles.info_single}>
-                                <h1 className={styles.prizesRef}>0</h1>
-                                <h3>Prêmios Recebidos</h3>
-                            </div>
+                        <div className={styles.info_single}>
+                            <h1 className={styles.clientesRateRef}>0</h1>
+                            <h3>Satisfação de nossos clientes</h3>
+                        </div>
+
+                        <div className={styles.info_single}>
+                            <h1 className={styles.prizesRef}>0</h1>
+                            <h3>Prêmios Recebidos</h3>
                         </div>
                     </div>
+                </div>
             </section>
         </>
     )
