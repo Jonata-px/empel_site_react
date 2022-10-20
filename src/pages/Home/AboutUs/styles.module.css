@@ -1,35 +1,15 @@
 .about_us{
-    background-color:var(--red_dark);
     position: relative;
-    margin: 250px auto;
-}
-
-@media screen and (max-width:1400px){
-    .about_us{
-        margin:200px auto;
-    }
-}
-@media screen and (max-width:1100px){
-    .about_us{
-        margin:120px auto;
-    }
-}
-@media screen and (max-width:768px){
-    .about_us{
-        margin:60px auto;
-    }
-}
-
-@media screen and (max-width:400px){
-    .about_us{
-        margin:30px auto;
-    }
+    margin: 100px auto;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    padding:80px 0;
 }
 
 .container{
     position: relative;
     z-index: 1;
-    /* background:green; */
 }
 
 .container h2{
@@ -83,3 +63,36 @@
 }
 
 
+@media screen and (max-width: 768px){
+    .container p{
+        font-size:1.2rem;
+    }
+
+    .yearsRef, .servicesRef, .clientesRateRef, .prizesRef{
+        font-size: 2.7rem;
+    }
+
+    .info_wrap{
+        flex-wrap: wrap;
+        gap:15px;
+        margin-top:50px;
+    }
+    
+    .info_single{
+        max-width:200px;
+        border-right: 0;
+        border-bottom: 1px dotted var(--gray);
+        padding:0 15px;
+    }
+}
+
+
+@media screen and (max-width: 473px){
+    .info_single{
+        width:auto;
+        max-width: unset;
+        border-right: 0;
+        border-bottom: 1px dotted var(--gray);
+        padding:0 15px;
+    }
+}

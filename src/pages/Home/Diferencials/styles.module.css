@@ -1,7 +1,9 @@
 .diferencials{
-    padding-bottom:40px;
     position: relative;
-    top: -30px;
+}
+
+.diferencials h2{
+    padding-top:0;
 }
 
 .diferencials_wrap{
@@ -9,7 +11,7 @@
     grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
     justify-content:center;
     align-items:center;
-    gap:5rem;
+    gap:2.5rem;
 }
 
 .item_single{
@@ -26,4 +28,19 @@
 
 .item_single h3{
     font-size:1.4rem;
+}
+
+@media screen and (max-width: 768px){
+    .diferencials_wrap{
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        justify-content:space-between;
+        align-items:flex-start;
+    }
+    
+
+    .item_single{
+        text-align:center;
+        justify-content:flex-start;
+        flex: 1;
+    }
 }

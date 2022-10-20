@@ -1,9 +1,8 @@
 import {useState, useRef, useEffect} from 'react'
 import styles from "./styles.module.css";
-import Image1 from "../../../assets/images/banner_1.jpg";
-import Image2 from "../../../assets/images/banner_2.jpg";
-import Image3 from "../../../assets/images/banner_3.jpg";
-import Image4 from "../../../assets/images/banner_4.jpg";
+import Image1 from "../../../assets/images/banner_1.webp";
+import Image2 from "../../../assets/images/banner_2.webp";
+import Image3 from "../../../assets/images/banner_4.webp";
 import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 export default function Banner() {
 
@@ -51,6 +50,19 @@ export default function Banner() {
     setI(i)
   }
 
+
+  const autoScroll = (to)=>{
+    var body = document.querySelector('#root');
+    let timer = setInterval(()=>{
+        let el = document.getElementById(to); 
+        if(el !== undefined){
+            body.scrollTop = body.scrollTop + 1;
+            body.scrollTo(0,el.offsetTop - 105);
+            clearInterval(timer);
+        }
+    })
+}
+
   var sliderOption = [
     {
       image:Image2,
@@ -63,7 +75,7 @@ export default function Banner() {
       p:`<p><span>Nossa</span> missão é o desenvolvimento de produtos e serviços, orientados para os consumidores e visando contribuir para otimização de sistemas elétricos, com o objetivo de elaborar soluções viáveis, com qualidade e confiabilidade dos nossos serviços, valorizando práticas de responsabilidade social para a concretização dos objetivos.</p>`
     },
     {
-      image:Image4,
+      image:Image3,
       h1:`<h1>Nossos Valores</h1>`,
       p:`<ul>
       <li><span>integridade,</span> porque agir com integridade é vital para construir e manter a confiança e os bons relacionamentos.</li>
@@ -153,7 +165,7 @@ export default function Banner() {
       <div ref={textRightRef} className={styles.container+" container "+styles.slide_right} ><div></div><div></div></div>
 
       <div className={"container "+styles.container_btn}>
-        <button className={"btn "+styles.btn}>Saiba mais</button>
+        <button onClick={()=>autoScroll("contact")} className={"btn "+styles.btn}>Saiba mais</button>
       </div>
     </section>
   )

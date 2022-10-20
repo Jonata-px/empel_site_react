@@ -20,6 +20,28 @@
   font-family: 'Roboto', sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 9px;               /* width of the entire scrollbar */
+  height: 14px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #cecece;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #030a8c;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #cecece;  /* creates padding around scroll thumb */
+}
+
+@media screen and (max-width: 1024px){
+
+  *::-webkit-scrollbar {
+    width: 0;               /* width of the entire scrollbar */      
+  }
+}
+
 html, body, #root{
   height: 100%;
   scroll-behavior: smooth;
@@ -53,6 +75,12 @@ a{
   text-decoration: none;
 }
 
+label{
+  font-size:1.3rem;
+  color:#636363;
+  font-weight:300;
+}
+
 img{
   max-width: 100%;
   display: block;
@@ -61,6 +89,10 @@ img{
 ul{
   list-style-type: none;
   list-style-position: inside;
+}
+
+input, textarea, button, select{
+  outline: 0;
 }
 
 .container{
@@ -79,6 +111,17 @@ ul{
 .btn:hover{
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   scale:1.08;
+}
+
+.background_red{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%) rotate(3.5deg);
+  background-color:var(--red_dark);
+  width: 150%;
+  height: 100%;
+  margin:0 auto;
 }
 
 .btn::before{
@@ -125,5 +168,30 @@ ul{
   100%{
     left: -18%;
     opacity: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size:3rem;
+  }
+  
+  h2{
+    font-size:2.3rem;
+  }
+  
+  p{
+    font-size:1rem;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  label{
+    font-size:1.3rem;
+    color:#636363;
+    font-weight:300;
   }
 }

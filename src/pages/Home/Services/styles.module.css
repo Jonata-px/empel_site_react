@@ -1,7 +1,9 @@
 .services_wrap{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
-    gap:2rem 1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem 2%;
+    justify-content:center;
+    align-items:center;
 
 }
 
@@ -19,6 +21,8 @@
     position: relative;
     z-index: 2;
     box-shadow: 4px 4px 8px rgba(0,0,0,.4);
+    max-width: 48%;
+    width: 100%;
 }
 
 .service_single:hover{
@@ -78,3 +82,10 @@
     font-weight: 300;
 }
 
+@media screen and (max-width: 768px){
+
+    .service_single{
+        max-width: unset;
+    }
+
+}

@@ -12,7 +12,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.4.2"
+    "react-leaflet": "^4.1.0",
+    "react-router-dom": "^6.4.2",
+    "swiper": "^8.4.4",
+    "vanilla-masker": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

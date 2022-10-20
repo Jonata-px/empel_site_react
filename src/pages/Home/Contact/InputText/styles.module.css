@@ -1,0 +1,45 @@
+.input_text{
+    position: relative;
+    margin-top: 35px;
+}
+
+.input_text input {
+    border: none;
+    border-bottom: 1px solid rgb(129, 129, 129);
+    background: none;
+    width: 100%;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    padding: 4px 0;
+}
+
+.input_text input:focus{
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.input_text input:focus~label{
+    bottom: 100% !important;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.input_text label{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.input_text input.valid{
+    border-color: var(--red);
+}
+
+.invalid_alert{
+    position:absolute;
+    bottom:-13.5px;
+    left: 0;
+    color:var(--red);
+    font-size:11px;
+}

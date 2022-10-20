@@ -1,0 +1,28 @@
+.maps{
+    position: relative;
+    margin-top: 60px;
+}
+
+.map_wrap{
+    width: 100%;
+    aspect-ratio: 3/1;
+    min-height: 250px;
+    border: 1px solid var(--secondary);
+    border-radius:5px;
+}
+
+.maps small{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    font-size:1rem;
+}
+
+.maps small a{
+    color: var(--secondary);
+}
+
+.maps small a:hover{
+    text-decoration: underline;
+}

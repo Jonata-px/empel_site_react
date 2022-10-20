@@ -87,38 +87,36 @@ export default function AboutUs() {
 
     return (
         <>
-            <section id={"about_us"} ref={aboutRef} className={styles.about_us} >
-                <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#aa232f" fillOpacity="1" d="M0,160L1440,256L1440,320L0,320Z"></path></svg>
-                <svg className={styles.svg+" "+styles.svg_2} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#aa232f" fillOpacity="1" d="M0,160L1440,256L1440,0L0,0Z"></path></svg>
+            <section ref={aboutRef} className={styles.about_us} >
+                <div className={"background_red"}></div>
+                    <div className={"container "+styles.container}>
+                        <h2>Quem somos</h2>
 
-                <div className={"container "+styles.container}>
-                    <h2>Quem somos</h2>
+                        <p>A EMPEL foi fundada em 1988 com o sr. Elves Vieira de Melo na cidade de Pires do Rio no interior do estado. Logo viu na região um futuro promissor para o mercado de prestação de serviços em eletricidade. Juntamente com muita disciplina e objetividade começou a construir a estrutura física e organizacional da empresa.</p>
+                        <p>Hoje com mais de 30 anos mercado atendemos todo o Brasil, com excelência em qualidade e satisfação. Desenvolvendo soluções para nossos clientes, para uma economia e melhor qualidade de energia elétrica.</p>
 
-                    <p>A EMPEL foi fundada em 1988 com o sr. Elves Vieira de Melo na cidade de Pires do Rio no interior do estado. Logo viu na região um futuro promissor para o mercado de prestação de serviços em eletricidade. Juntamente com muita disciplina e objetividade começou a construir a estrutura física e organizacional da empresa.</p>
-                    <p>Hoje com mais de 30 anos mercado atendemos todo o Brasil, com excelência em qualidade e satisfação. Desenvolvendo soluções para nossos clientes, para uma economia e melhor qualidade de energia elétrica.</p>
+                        <div className={styles.info_wrap}>
+                            <div className={styles.info_single}>
+                                <h1 className={styles.yearsRef}>0</h1>
+                                <h3>Anos de Experiência</h3>
+                            </div>
 
-                    <div className={styles.info_wrap}>
-                        <div className={styles.info_single}>
-                            <h1 className={styles.yearsRef}>0</h1>
-                            <h3>Anos de Experiência</h3>
-                        </div>
+                            <div className={styles.info_single}>
+                                <h1 className={styles.servicesRef}>0</h1>
+                                <h3>Serviços Concretizados</h3>
+                            </div>
 
-                        <div className={styles.info_single}>
-                            <h1 className={styles.servicesRef}>0</h1>
-                            <h3>Serviços Concretizados</h3>
-                        </div>
+                            <div className={styles.info_single}>
+                                <h1 className={styles.clientesRateRef}>0</h1>
+                                <h3>Satisfação de nossos clientes</h3>
+                            </div>
 
-                        <div className={styles.info_single}>
-                            <h1 className={styles.clientesRateRef}>0</h1>
-                            <h3>Satisfação de nossos clientes</h3>
-                        </div>
-
-                        <div className={styles.info_single}>
-                            <h1 className={styles.prizesRef}>0</h1>
-                            <h3>Prêmios Recebidos</h3>
+                            <div className={styles.info_single}>
+                                <h1 className={styles.prizesRef}>0</h1>
+                                <h3>Prêmios Recebidos</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </>
     )

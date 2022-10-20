@@ -1,0 +1,136 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    align-items: center;
+}
+
+.box{
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border-radius:10px;
+    background-color:var(--secondary);
+    margin-top: 15px;
+}
+
+.box li{
+    margin-top:10px;
+}
+
+.box a{
+    color: var(--gray);
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box a:hover{
+    text-decoration: underline;
+}
+
+.box a:hover svg{
+    scale: 1.3;
+}
+
+.box a svg{
+    font-size: 1.4rem;
+}
+
+.box ul h3:last-of-type{
+    margin-top:20px;
+}
+
+.box h3{
+    color: var(--gray);
+    text-align: center;
+    margin-bottom:5px;
+    font-size: 1.4rem;
+}
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.socials a svg{
+    font-size:2.8rem;
+
+}
+
+.socials a:hover svg{
+    filter:drop-shadow(1px 1px 1px var(--red));
+}
+
+
+.contact form{
+    flex: 1;
+}
+
+.textarea_wrap{
+    margin-top:15px;
+    display: flex;
+    flex-direction:column;
+}
+
+.textarea_wrap textarea{
+    order: 2;
+    margin-top:3px;
+    width:100%;
+    height:140px;
+    resize:none;
+    border-radius: 5px;
+    background-color:var(--accent);
+    border: 1px solid rgb(129, 129, 129);
+    padding:5px 10px;
+    font-size:1.2rem;
+}
+
+.textarea_wrap textarea:focus{
+    border: 1px solid var(--secondary);
+}
+
+.textarea_wrap textarea:focus + label{
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.contact form button{
+    width: 100%;
+    margin-top:15px;
+    background-color: var(--red);
+    color: var(--gray);
+    font-size:1.6rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding:5px;
+    opacity: 0.9;
+}
+
+.contact form button:hover{
+    scale: 1;
+    opacity: 1;
+}
+
+.contact form button:disabled{
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 768px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+        order: 1;
+    }
+
+    .box{
+        order:2;
+    }
+}

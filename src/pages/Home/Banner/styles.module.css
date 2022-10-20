@@ -106,6 +106,8 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: .5;
+    height: auto;
+    display:flex;
 }
 
 .toRight{
@@ -123,13 +125,38 @@
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    padding:0 55px;
 }
 
 .btn{
     background-color: var(--red);
-    font-size:1.4rem;
+    font-size:1.6rem;
     color: #fff;
     border-radius:5px;
     padding:5px 20px;
     margin-left: 18px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px){
+    .banner{
+        height:110px;
+        min-height: 650px;
+    }
+
+    .container :is(p, li){
+        font-size:1.2rem;
+    }
+    
+    .btn{
+        margin:0 auto;
+        display:block;
+    }
+
+    .container_btn{
+        bottom: 35px;
+    }
+    
 }
