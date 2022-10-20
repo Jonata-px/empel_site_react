@@ -87,3 +87,21 @@
         font-size:1.6rem;
     }
 }
+
+@media screen and (max-width: 375px){
+    .representatives li{
+        font-size:1rem;
+    }
+
+    .representatives li svg{
+        font-size:1.4rem;
+    }
+
+    .services h1{
+        font-size:4rem;
+    }
+    
+    .services h3{
+        font-size:1.4rem;
+    }
+}
