@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/empel_site/',///deletar em produção
-  server: {
+  server: {///deletar em produção
     host: true
   }
 })
