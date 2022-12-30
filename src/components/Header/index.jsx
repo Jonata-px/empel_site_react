@@ -15,8 +15,9 @@ export default function Header() {
     }
 
     const autoScroll = (to)=>{
+        setMenuIsOpen(false);
         let timer = setInterval(()=>{
-            let el = document.getElementById(to); 
+            let el = document.getElementById(to);
             if(el !== undefined){
                 body.scrollTop = body.scrollTop + 1;
                 body.scrollTo(0,el.offsetTop - 105);
